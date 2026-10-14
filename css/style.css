@@ -1,0 +1,288 @@
+body {
+  font-family:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  background-color: #fffbeb;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.sm-font {
+  font-size: 12px;
+  line-height: 16px;
+}
+.md-font {
+  font-size: 14px;
+  line-height: 20px;
+}
+.grey-color {
+  color: #6a7282;
+}
+.bg-green {
+  background-color: #dbfce7;
+}
+.green-color {
+  color: #008236;
+}
+.blue-color {
+  color: #1447e6;
+}
+.bg-blue {
+  background-color: #dae9fd;
+}
+.orange-color {
+  color: #f54900;
+}
+.bg-orange {
+  background-color: #ffedd4;
+}
+.yellow-color {
+  color: #d08700;
+}
+.bg-yellow {
+  background-color: #fef9c2;
+}
+.red-color {
+  color: #e7000b;
+}
+.bg-red {
+  background-color: #ffe2e2;
+}
+.pink-color {
+  color: #e60076;
+}
+.bg-pink {
+  background-color: #fce7f3;
+}
+
+/**************** navbar ***************/
+nav {
+  /* border: 1px solid #ffedd4;
+    box-shadow: 2px 2px 1px #e6e1d5; */
+  border-bottom: 2px solid #f0dfc5;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler {
+  i:hover {
+    color: #f54900;
+  }
+}
+.meal {
+  width: 48px;
+  height: 48px;
+  background-image: linear-gradient(90deg, #ff6900, #fb2c36);
+  border-radius: 50%;
+  i {
+    color: white;
+  }
+  & + div {
+    h1 {
+      color: black;
+      font-size: 18px;
+      line-height: 28px;
+    }
+    span {
+      color: #6a7282;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+.collapse {
+  ul {
+    border-top: 1px solid #ffedd4;
+    img {
+      width: 28px;
+      height: 28px;
+      border: 2px solid #ffb86a;
+    }
+    .nav-item {
+      color: #4a5565;
+      transition: all 0.3s;
+    }
+    .nav-item:hover {
+      color: #f54900;
+    }
+  }
+}
+
+/************************ home ********************/
+.meal-img {
+  height: 400px;
+  img{
+    border-top-left-radius: 20px ;
+    border-top-right-radius: 20px ;
+  }
+}
+.content{
+  padding: 24px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+.reviews {
+  transform: translate(20px, 20px);
+}
+.cooking-info {
+  width: 85%;
+  transform: translate(20px, -20px);
+  i {
+    color: #ff6900;
+  }
+}
+.save-and-share {
+  div {
+    color: #f54900;
+    background-color: #ffedd4;
+    width: 48px;
+    height: 48px;
+    transition: all 0.2s;
+  }
+  div:hover {
+    background-color: #ffd6a7;
+  }
+}
+.content {
+  padding: 20px;
+}
+.alert {
+  background-color: #fef2f2;
+  border-left: 4px solid #fb2c36;
+  i {
+    font-size: 20px;
+  }
+  div {
+    p:nth-of-type(1) {
+      color: #9f0712;
+    }
+  }
+}
+.meal-details {
+  .nav-tabs .nav-link {
+    border: 0;
+    padding: 0;
+    padding-bottom: 8px;
+    color: #6a7282;
+    border-color: transparent;
+    &:hover {
+      color: #4a5552;
+    }
+  }
+
+  .nav-link.active {
+    color: #f54a00;
+    border-bottom: 2px solid #f54900;
+  }
+  .nav-link.active:hover {
+    color: #6a7282;
+  }
+}
+
+
+.tab-pane {
+  max-height: 340px;
+  overflow-y: auto;
+}
+.ingredients {
+  background-color: #fff9ec;
+  .num {
+    div {
+      width: 24px;
+      height: 24px;
+      background-color: #ff6900;
+    }
+  }
+}
+.instructions {
+  .num {
+    width: 48px;
+    height: 48px;
+    background-color: #ff6900;
+  }
+}
+.chefs {
+  .rounded-4 {
+    border-left: 4px solid #ffba02;
+    background-color: #fffbeb;
+  }
+  .icon {
+    width: 30px;
+    height: 25px;
+    background-color: #e17100;
+  }
+  i {
+    font-size: 12px;
+  }
+}
+.macros {
+  background-color: #f9fafb;
+}
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.meals-button {
+  background-image: linear-gradient(90deg, #ff6900, #fb2c36);
+  transition: all 0.2s;
+}
+.meals-button:hover {
+  transform: scale(1.05);
+  background-image: linear-gradient(90deg, #f44700, #e70008);
+}
+
+@media screen and (min-width: 992px) {
+
+  /* .default-height{
+   height: 750px; 
+  }
+  .lg-height{
+    height: 900px;
+  } */
+
+  .meal {
+    & + div {
+      h1 {
+        color: black;
+        font-size: 24px;
+        line-height: 32px;
+      }
+      span {
+        color: #6a7282;
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+  }
+  .collapse {
+    ul {
+      border: none;
+    }
+    .nav-item .nav-item-span {
+      display: none;
+    }
+  }
+  
+  .meal-img {
+    height: 700px;
+    border: 0;
+    img{
+      border-top-right-radius:0 ;
+      border-bottom-left-radius: 20px;
+    }
+  }
+  .content{
+    overflow-y: auto;
+    max-height: 700px;
+    padding: 40px;
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 20px;
+  }
+}
